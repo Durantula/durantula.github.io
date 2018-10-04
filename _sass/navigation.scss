@@ -1,0 +1,486 @@
+.navbar{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 200;
+  transition: 0.5s;
+  &-contain{
+    display: flex;
+    align-items: center;
+  }
+
+  &-brand{
+    @media screen and (max-width: 992px){
+      margin-right: 0px;
+    }
+    img{
+      height: 50px;
+    }
+  }
+
+  &-nav{
+    margin-top: 30px;
+
+    .nav-item{
+      padding: 0 10px;
+    }
+
+
+
+    .dropdown-menu{
+      transition: 0.3s;
+      border-radius: 2px;
+      border: none!important;
+      background-color: #fff;
+      white-space: normal;
+      box-shadow: 0 4px 6px rgba(50,50,93,0.11), 0 1px 3px rgba(0,0,0,0.08);
+      padding: 0px;
+      margin-top: -2px;
+      .dropdown-item{
+        padding: .5rem 1rem!important;
+        white-space: normal;
+        outline: 0px;
+        &:hover, &:active{
+          background-color:#f9f9f9;
+        }
+
+      }
+
+      .product{
+        width: 450px;
+        
+        img{
+          height: 10px;
+          width: auto
+        }
+        h2{
+          font-size: 23px;
+          margin:0px;
+          margin-top: -7px;
+        }
+        p{
+          font-size: 10px;
+          margin: 0px;
+        }
+
+      }
+    }
+
+
+
+    li{
+      a{
+        color: #fff;
+        font-family: $mainFont;
+        font-size: 14px;
+        // text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
+
+
+.dark{
+  position: relative!important;
+  background-color: #f6f9fc;
+  .navbar-nav{
+    a{
+      color: #525f7f
+    }
+  }
+}
+
+
+//secondary nav
+.product-brand{
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+
+  @media screen and (max-width: 992px){
+    margin-right: 0px;
+  }
+  .brand-icon{
+
+    
+
+    img{
+      height: 30px;
+      width: auto;
+      margin-right: 15px;
+    }
+  }
+  .brand-name{
+    img{
+      height: 10px;
+      width: auto;
+    }
+    h1{
+      color: $mainGrey;
+      font-family: $mainFont;
+      font-size: 20px;
+      margin-bottom: 0px;
+      @media screen and (max-width: 568px){
+        font-size: 18px;
+      }
+
+    }
+    .active{
+      border-bottom: 2px solid $feature-blue;
+    }
+  }
+}
+
+.product-navigation-bar{
+  background-color: #FFFFFF;
+  @media screen and (max-width: 992px){
+  }
+
+  .navbar-contain{
+    position: relative;
+    @media screen and (max-width: 992px){
+      justify-content: left;
+      height: 60px;
+     
+    }
+    @media screen and (max-width: 582px){
+      margin: 0 15px;
+    }
+  }
+
+  .navbar-toggler{
+    border: none;
+    outline: 0px;
+  }
+
+  .demo-navigation-button{
+    @media screen and (max-width: 992px){
+      position: absolute;
+      right: 0px;
+    }
+  }
+
+  .navbar-nav{
+    margin-top: 0px;
+
+    .active{
+      border-bottom: 4px solid #e1e1e1!important;
+      height: 60px;
+      @media screen and (max-width: 992px){
+        border: none!important;
+        font-weight: 600;
+        color: $mainGrey!important
+      }
+    }
+
+    .nav-item{
+      height: 60px!important;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+
+      &:hover, &:active{
+        @media screen and (max-width:992px){
+          background-color: #f6f6f6;
+          .nav-link{
+            color: $mainGrey;
+          }
+        }
+      }
+      .nav-link{
+        color: $mainGrey;
+        // padding: 0 20px!important;
+        width: 100%;
+        line-height: 60px;
+        height: 60px;    
+        font-weight: 600;
+        padding: 0 10px;
+        
+        @media screen and (max-width: 992px) {
+          color: #d1d1d1
+        }
+      }
+    }
+    .try-button{
+
+      a{
+        border: 1px solid #00a7c5;
+        border-radius: 4px;
+        height: 30px!important;
+        line-height: 30px!important;
+        font-size: 12px;
+        color: #00a7c5;
+        text-transform: uppercase;
+        font-weight: 600!important;
+        transition: 0.3s;
+        padding: 7px 15px!important;
+        @media screen and (max-width: 568px){
+          font-size: 10px;
+        }
+        &:hover{
+          background-color: #00a7c5;
+          color: white!important;
+        }
+      }
+    }
+  }
+}
+
+
+.product-nav{
+  background-color: #ffffff;
+  z-index: 200;
+  transition: 0.1s;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0px!important;
+  border-top: 1px solid #e3e3e3;
+
+}
+
+.product-nav.js-is-sticky {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,.25);
+  .try-button{
+
+    .compliance-try{
+      background-color: #ca292d;
+    }
+    .maintenance-try{
+      background-color: #4646cd;
+    }
+    a{
+      background-color: #00a7c5;
+      color: white!important;
+      
+    }
+  }
+}
+.product-nav.js-is-sticky--change {
+  // height: 50px;
+}
+.product-nav.js-is-stuck {
+  
+}
+
+.wrapper-hide-nav{
+  width: 100%;
+  @media screen and (min-width: 992px){
+    display: none;
+  }
+}
+
+.secondary-collapsed-menu{
+  background-color: #f9f9f9;
+
+  
+  ul{
+    padding: 0px;
+
+    li{
+      padding: 0px!important;
+      a{
+        padding: 0px!important;
+        margin-left: 45px
+      }
+    }
+  }
+}
+
+.navigation-action{
+  cursor: pointer;
+  border-radius: 4px;
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid white;
+  margin-left: 10px;
+  transition: 0.3s;
+  
+  &:hover{
+    background-color: $mainGrey ;
+    border-color: $mainGrey;
+    box-shadow: 0 4px 6px rgba(50,50,93,0.11), 0 1px 3px rgba(0,0,0,0.08);
+  }
+  a{
+    color: white;
+    font-size: 12px!important;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 5px 10px!important;
+    margin: 0px;
+  }
+}
+.hidden-brand{
+  transition: 0.5s;
+  display: none!important;
+}
+.initial-brand{
+  transition: 0.5s;
+}
+.main-nav.js-is-sticky {
+  .navbar{
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0,0,0,.25);
+  }
+  .navbar-nav{
+    margin-top: 0px;
+  }
+  .initial-brand{
+    display: none;
+    img{
+      height: 30px;
+    }
+  }
+  #nav-icon1{
+    margin-top: 5px;
+    span{
+      background-color: $mainGrey;
+    }
+  }
+  
+  .nav-link{
+    color: $mainGrey;
+  }
+  .hidden-brand{
+    display: block!important;
+    img{
+      height: 30px;
+    }
+  }
+  .navigation-action{
+    background-color: $mainGrey;
+    border-color: $mainGrey;
+    a{
+      color: white;
+    }
+  }
+}
+.main-nav.js-is-sticky--change {
+  // height: 50px;
+}
+.main-nav.js-is-stuck {
+
+  
+}
+
+.mainDropdownMenu{
+  background-color: transparent;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+.dropdown-box{
+  position: relative;
+  background-color: white;
+  border-radius: 4px;
+  margin: 10px;
+  overflow: hidden;
+  box-shadow: 0 50px 100px rgba(50,50,93,.1), 0 15px 35px rgba(50,50,93,.15), 0 5px 15px rgba(0,0,0,.1);
+  display: none;
+  @media screen and (max-width: 768px){
+    display: block;
+  }
+}
+.dropdown-heading{
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f9f9f9;
+  p{
+    color: $mainGrey;
+    font-family: $mainFont;
+    font-weight: 400;
+    margin: 0px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  i{
+    color: $mainGrey;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+}
+
+.product-wrapper{
+  padding: 10px 10px 15px;
+  margin: 0px;
+  p{
+    font-size: 10px;
+    margin: 0px;
+  }
+  h2{
+    font-size: 14px;
+  }
+  img{
+    height: 10px;
+  }
+
+  .icon{
+    margin-top: 10px;
+  }
+
+  &:hover{
+    background-color: #f9f9f9;
+  }
+}
+
+.dropdown-footer{
+  background-color: #f6f9fc;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  .dropdown-action{
+    font-family: $mainFont;
+    background-color: $feature-blue;
+    border-radius: 4px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 5px 20px;
+    margin: 20px 10px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+  button{
+    margin: 10px 
+  }
+}
+
+
+
+.feature-nav{
+  .navbar{
+    position: relative;
+    background-color: #f6f9fc;
+    #nav-icon1{
+      span{
+        background-color: $mainGrey;
+      }
+    }
+    
+
+    .nav-link{
+      color: $mainGrey;
+    }
+    .navigation-action{
+      border-color: $mainGrey;
+      .nav-link{
+        color: $mainGrey;
+      }
+      &:hover{
+        .nav-link{
+          color: white;
+        }
+      }
+    }
+  }
+}

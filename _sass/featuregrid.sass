@@ -1,0 +1,283 @@
+$feature-green: #40AD48
+$fadein-time: 0.5s
+
+
+$feature-slide: 150px
+@keyframes feature-enter
+  from
+    opacity: 0
+    left: -$feature-slide
+
+  to
+    opacity: 1
+    left: 0
+
+
+/* Firefox < 16 */
+@-moz-keyframes feature-en
+  from
+    opacity: 0
+    left: -$feature-slide
+
+  to
+    opacity: 1
+    left: 0
+
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes feature-enter
+  from
+    opacity: 0
+    left: -$feature-slide
+
+  to
+    opacity: 1
+    left: 0
+
+
+/* Internet Explorer */
+@-ms-keyframes feature-enter
+  from
+    opacity: 0
+    left: -$feature-slide
+
+  to
+    opacity: 1
+    left: 0
+
+
+/* Opera < 12.1 */
+@-o-keyframes feature-enter
+  from
+    opacity: 0
+    left: -$feature-slide
+
+  to
+    opacity: 1
+    left: 0
+
+
+
+.feature-grid .row
+  margin-bottom: 20px
+  &> div
+    @media (min-width:768px)
+      margin: 5px 0
+
+    &:last-child .inner
+      @media (max-width:767px)
+        border: 1px solid white
+
+    .inner
+      padding: 0px
+      cursor: pointer
+      border: 1px solid white
+
+      @media (max-width:767px)
+        border-bottom: 0px
+
+      &:hover
+        background-color: white
+        color: $feature-green
+
+      h4
+        text-transform: uppercase
+        line-height: 1.5
+        margin-top: 0.5em
+        @media (min-width:768px)
+          text-align: left
+
+
+.fs-feature-detail
+  font-size: 95%
+  .feature
+    margin-bottom: 1.5em
+    padding-right: 2em
+  h3
+    font-size: 120%
+
+  div.container
+    display: none
+    position: relative
+    -webkit-animation: feature-enter $fadein-time
+    -moz-animation: feature-enter $fadein-time
+    -ms-animation: feature-enter $fadein-time
+    -o-animation: feature-enter $fadein-time
+    animation: feature-enter $fadein-time
+
+    &.active
+      display: block
+
+  img
+    max-width: 100%
+
+
+#integrated-accounting .accounting-logos
+  a
+    opacity: 1
+    margin-right: 15px
+
+  a.last
+    margin-right: 0
+  img
+    height: 60px
+
+
+div.mbp
+  position: relative
+  width: 100%
+  max-width: 800px
+  &::after
+    content: ' '
+    position: absolute
+    right: 0
+    top: 0
+    background-image: url("/assets/img/mbp_Template.png")
+    background-size: contain
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    width: 100%
+    height: 100%
+    z-index: 1
+
+  img.screen
+    opacity: 0
+    max-width: 100%
+
+  img:not(.screen)
+    z-index: 0
+    position: absolute
+    left: 12%
+    width: 78%
+    height: 86%
+    top: 6%
+
+div.iphone_v2
+  position: relative
+  bottom: 380px
+  left: 82%
+  width: 100%
+  max-width: 170px
+  margin-bottom: -340px
+  &::after
+    content: ' '
+    position: absolute
+    right: 0
+    top: 0
+    background-image: url("/assets/img/iPhone6_Template.png")
+    background-size: contain
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    width: 100%
+    height: 100%
+    z-index: 5
+
+  img.screen
+    opacity: 0
+
+  img:not(.screen)
+    z-index: 4
+    position: absolute
+    left: 9%
+    width: 81%
+    height: 86%
+    top: 7%
+
+
+div.mbp-iphone-combo
+  div.mbp
+    @media (max-width:768px)
+      width: 80%
+
+div.mbp-iphone-combo
+  @media (max-width:768px)
+    padding-top: 30px
+    height: 30vh
+
+div.mbp-iphone-combo
+  div.iphone_v2
+    @media (max-width:768px)
+      left: 66%
+      max-width: 30%
+      bottom: 35vh
+
+
+div.ipad
+  position: relative
+  width: 100%
+  max-width: 600px
+  &::after
+    content: ' '
+    position: absolute
+    right: 0
+    top: 0
+    background-image: url("/assets/img/iPadAir_Template.png")
+    background-size: contain
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    width: 100%
+    height: 100%
+    z-index: 3
+
+  img.screen
+    opacity: 0
+
+  img:not(.screen)
+    z-index: 2
+    position: absolute
+    left: 9%
+    width: 81%
+    height: 86%
+    top: 7%
+
+
+div.iphone
+  position: relative
+  bottom: 350px
+  left: 65%
+  width: 100%
+  max-width: 200px
+  &::after
+    content: ' '
+    position: absolute
+    right: 0
+    top: 0
+    background-image: url("/assets/img/iPhone6_Template.png")
+    background-size: contain
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    width: 100%
+    height: 100%
+    z-index: 5
+
+  img.screen
+    opacity: 0
+
+  img:not(.screen)
+    z-index: 4
+    position: absolute
+    left: 9%
+    width: 81%
+    height: 86%
+    top: 7%
+
+
+div.apple-bullshit
+    position: relative
+
+    img
+      max-width: 100%
+
+
+div.apple-bullshit img.ipad
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+
+
+div.apple-bullshit img.iphone
+    position: absolute
+    right: 0
+    bottom: 0
+    width: 200px

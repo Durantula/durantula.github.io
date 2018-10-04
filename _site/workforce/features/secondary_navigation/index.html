@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-light product-navigation-bar product-nav sticky-navigation">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <div class="product-brand">
+                <div class="brand-icon">
+                    <img src="/assets/img/workforce.png" alt="workforce logo">
+                </div>
+                <div class="brand-name">
+                    <!-- <img src="/assets/img/logodark.png" alt=""> -->
+                    <h1>Workforce</h1>
+                </div>
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item "> 
+                    <a class="nav-link active" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/workforce/pricing">Pricing</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item {% if page.section == 'pricing' %}active{% endif %} try-button"> <a class="nav-link" href='/workforce/pricing/'>Try it free</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,73 @@
+---
+---
+//variables
+$feature-green: #40AD48
+$feature-blue: #00ADEF
+$feature-teal: #00A19A
+$feature-stone: #425363
+$feature-lightblue: #C6EAFB
+$mainFont: 'Raleway', sans-serif
+$mainGrey: #525f7f
+
+
+@import "featuregrid"
+@import "home_page"
+@import "footer"
+@import "helpers"
+@import "navigation"
+@import "test"
+@import "feature"
+@import "pricing"
+@import "nav_icon"
+
+
+p
+  font-family: $mainFont
+  color: #525f7f
+
+h2
+  color: #525f7f
+  font-family: $mainFont
+  margin-bottom: 20px
+
+
+
+// Common elements
+.navbar-dark
+  background-color: black
+
+
+.panel
+  padding-top: 2em
+  padding-bottom: 2em
+
+.panel-light
+  background-color: white
+
+.panel-dark
+  background-color: #f6f9fc
+
+// Page: Homepage
+.home-masthead
+  //background-color: black
+  //background-image: url('/assets/img/wireframes/masthead.png')
+  //background-size: cover
+  text-align: center
+
+  h1
+    color: white
+    padding-top: 4em
+
+  .container
+    height: 450px
+
+.home-stats
+  .stat
+    color: $feature-blue
+    font-size: 300%
+
+.home-logos
+  img
+    padding-top: 20px
+    padding-bottom: 50px
+

@@ -1,0 +1,1007 @@
+---
+---
+
+// this file is NOT USED
+// this file will automatically be processed into CSS by Jekyll:
+// http://jekyllrb.com/docs/assets/
+
+$red:   #00ADEF; // feature1 blue
+$green: #00A19A; // feature2 green
+$gold:  rgb(200,237,233); // feature3 teal
+$brown: rgb(216,218,221); // feature4 gray
+$pale:  rgb(216,218,221); // feature4 paleblue
+
+
+$feature-slide: 150px;
+@keyframes feature-enter {
+    from {
+      opacity: 0;
+      left: -$feature-slide;
+    }
+    to {
+      opacity: 1;
+      left: 0;
+    }
+}
+/* Firefox < 16 */
+@-moz-keyframes feature-enter {
+    from {
+      opacity: 0;
+      left: -$feature-slide;
+    }
+    to {
+      opacity: 1;
+      left: 0;
+    }
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes feature-enter {
+    from {
+      opacity: 0;
+      left: -$feature-slide;
+    }
+    to {
+      opacity: 1;
+      left: 0;
+    }
+}
+/* Internet Explorer */
+@-ms-keyframes feature-enter {
+    from {
+      opacity: 0;
+      left: -$feature-slide;
+    }
+    to {
+      opacity: 1;
+      left: 0;
+    }
+}
+/* Opera < 12.1 */
+@-o-keyframes feature-enter {
+    from {
+      opacity: 0;
+      left: -$feature-slide;
+    }
+    to {
+      opacity: 1;
+      left: 0;
+    }
+}
+
+body {
+  font-size: 110%;
+  color: black;
+  @media (max-width:767px) { overflow-x: hidden; }
+  // @media (min-width:768px) { font-size: 160%; }
+  // @media (min-width:992px) { font-size: 190%; }
+  // @media (min-width:1200px){ font-size: 220%; }
+  background-color: $brown;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 { font-size: 200%; }
+h2 { font-size: 175%; margin-top: 0px; }
+h3 { font-size: 150%; line-height: 90%; }
+h4 { font-size: 100%; }
+h1, h2, h3, b, strong { font-weight: normal; }
+a, a:visited, a:hover, a:active {
+  color: #FFF;
+  text-decoration: none;
+}
+.red {
+  background-color: $red;
+}
+.white {
+  background-color: #fff;
+  color: #333;
+  h2, h3 { color: $green; }
+}
+.green {
+  background-color: $green;
+  h2, h3 { color: #333; }
+  a {
+    opacity: 0.7;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+.gold {
+  background-color: $gold;
+  h2, h3 { color: #333; }
+}
+.find-out-more {
+  display: inline-block;
+  color: #333;
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 5px 10px;
+  &:visited, &:focus {
+    color: white;
+  }
+  &:hover, &:active {
+    background-color: white;
+  }
+}
+.gold .find-out-more:hover { color: #333; }
+.red .find-out-more:hover, .masthead .find-out-more:hover { color: #333; }
+.green .find-out-more:hover { color: #333; }
+.brown .find-out-more:hover { color: #333; }
+.white .find-out-more {
+  color: #333;
+  border: 1px solid $green;
+  &:hover, &:active {
+    color: #333;
+    background-color: $green;
+  }
+}
+.row.vdivide {
+  @media (min-width:768px) {
+    margin-bottom: 2em;
+    [class*='col-'] {
+      height: 8em;
+    }
+    [class*='col-']:not(:last-child):after {
+      background: $gold;
+      width: 1px;
+      content: "";
+      display:block;
+      position: absolute;
+      top:0;
+      bottom: 0;
+      right: 0;
+      min-height: 70px;
+    }
+  }
+}
+
+.logo-set .card { border: 0; }
+.logo-set .card img { padding: 5px 20px; }
+
+strong.stat span { color: $brown; }
+section{
+  padding: 20px 0;
+  @media (min-width:768px) { padding: 30px 0; }
+  @media (min-width:992px) { padding: 40px 0; }
+  &> .container > .row:not(:last-child) {
+    padding-bottom: 20px;
+    @media (min-width:768px) { padding-bottom: 30px; }
+    @media (min-width:992px) { padding-bottom: 40px; }
+  }
+}
+body:not(.section-home) header {
+  background: url(../img/other-banner-bg.png) repeat-x scroll center top $red;
+  background-size: auto 100%;
+  padding-bottom: 20px;
+  @media (min-width:768px) {
+    height: 130px;
+  }
+}
+body.section-home header{
+  background: url(../img/banner-home.jpg) no-repeat scroll center top / cover;
+  height: 200px;
+}
+.masthead {
+  padding-top: 0px;
+  padding-bottom: 50vw;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-color: $red;
+  background-size: 75% auto;
+  &.fs-masthead { background-image: url(../img/banner-field-servicing.png); }
+  &.fm-masthead { background-image: url(../img/banner-facilities-management.png); }
+  &.case-studies-masthead { background-image: url(../img/banner-case-studies-ambulance-vic.png); }
+  &.case-studies-ambulance-vic-masthead { background-image: url(../img/banner-case-studies-ambulance-vic.png); }
+  &.case-studies-services-group-masthead { background-image: url(../img/banner-case-studies-services-group.png); }
+  &.pricing-masthead { background-image: url(../img/banner-pricing.png); }
+  &.contact-masthead { background-image: url(../img/banner-contact.png); }
+  .glyphicon { top: 5px; left: 5px; }
+  @media (min-width:768px) {
+    height: inherit;
+    padding-bottom: 5vw;
+    max-height: 500px;
+    background-size: 60% auto;
+    .box { width: 35%; }
+  }
+  @media (min-width:1400px) { background-size: auto 100%; }
+}
+.panel-spaced .row {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+nav.navbar {
+  border: 0px;
+  text-transform: uppercase;
+  @media (max-width:767px) {
+    margin: 0 -15px;
+    padding: 0;
+    .mobile-menu {
+      line-height: 30px;
+      color: $gold;
+      text-align: right;
+      padding-right: 15px;
+      background: url(../img/mobile-menu-icon.png) no-repeat scroll right 60px top 10px $brown;
+      cursor: pointer;
+      &.open {
+        background-position: right 60px top -15px;
+      }
+    }
+    .navbar-nav {
+      display: none;
+      background-color: $green;
+      margin: 0px;
+      li {
+        &.active a { color: $gold; }
+        a {
+          padding: 0px;
+          margin: 0 15px;
+          line-height: 35px;
+          border-bottom: 1px solid $brown;
+          &:hover, &:active {
+            background-color: transparent;
+          }
+        }
+        &:last-child a {
+          border-bottom: 0px;
+        }
+      }
+    }
+    .logo {
+      text-align: center;
+      margin-top: 25px;
+      img {
+        max-width: 70%;
+      }
+    }
+    .nav-item{
+      float: none;
+    }
+  }
+  @media (min-width:768px) {
+    .mobile-menu { display: none; }
+    .navbar-nav {
+      display: block !important;
+      margin-top: 20px;
+      li {
+        &.active a { background-color: $red; }
+        a {
+          font-size: 90%;
+          padding: 8px;
+          color: #FFF;
+          &:hover, &:active {
+            color: white;
+            background-color: $brown;
+          }
+        }
+      }
+    }
+    .logo {
+      float: right;
+      margin-top: 15px;
+      img{
+        width: 180px;
+        height: auto;
+      }
+    }
+  }
+  @media (min-width:992px) {
+    li a {
+      font-size: 100%;
+      padding: 15px 8px;
+    }
+    .logo {
+      margin-top: 15px;
+      img {
+        width: 180px
+      }
+    }
+  }
+}
+body.section-home {
+  .home-cred > .container > .row > div{
+    @media (max-width:767px) {
+      .inner {
+        padding: 10px;
+        border-bottom: 1px solid white;
+      }
+      &:first-child .inner { padding-top: 0px; }
+      &:last-child .inner { border-bottom: 0px; }
+    }
+    @media (min-width:768px) {
+      border-right: 1px solid #ec4943;
+      &:last-child { border-right: 0px; }
+    }
+    h3 {
+      margin-top: 0px;
+      font-size: 300%;
+      span { color: $brown; }
+    }
+    p {
+      margin: 0 auto;
+      width: 65%;
+    }
+  }
+  .home-network {
+    .card {
+      border: none;
+    }
+  }
+  .home-network > .container > .row > div{
+    @media (max-width:767px) {
+      padding: 15px 0;
+      margin: 0 15px;
+      border-top: 1px solid $gold;
+    }
+    @media (min-width:768px) {
+      border-right: 1px solid $gold;
+      &:last-child { border-right: 0px; }
+    }
+
+    h3 {
+      margin-top: 0px;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+    .item{
+      ul {
+        margin-bottom: 0px;
+        height: auto !important;
+        li {
+          img {
+            max-width: 120px;
+            margin: 0 auto;
+          }
+        }
+      }
+      .lSAction > a {
+        background: url(../img/carousel-control.png) no-repeat scroll left center;
+        height: 26px;
+        width: 26px;
+        &.lSNext {
+          background-position: right center;
+        }
+      }
+      .lSSlideOuter .lSPager.lSpg > li:hover a, .lSSlideOuter .lSPager.lSpg > li.active a {
+        background-color: lighten($gold,15%);
+      }
+    }
+    &.testimonial p {
+      @media (max-width:767px) { margin-bottom: 0px; }
+      @media (min-width:768px) { margin-top: 30px; }
+      &::before { content: "\""; color: $green; }
+      &::after { content: "\""; color: $green; }
+      &:not(:first-child) {
+        display: none;
+      }
+    }
+  }
+  .home-whatwedo > .container > .row > div {
+    text-align: left;
+    @media (max-width:767px) {
+      padding: 20px 0;
+      margin: 0 15px;
+      &:first-child { border-bottom: 1px solid white; padding-top: 0px; }
+    }
+    @media (min-width:768px) {
+      padding: 0 30px;
+      border-right: 1px solid white;
+      &:last-child { border-right: 0px; }
+    }
+    h3 {
+      margin-top: 0px;
+      text-transform: uppercase;
+    }
+    p { font-size: 90%; }
+    img {
+      float: right;
+      max-width: 45%;
+      margin-left: 10px;
+      @media (max-width:767px) { margin-top: 15px; }
+    }
+  }
+  .home-grow > .container > .row > div {
+    h3 {
+      margin-top: 0px;
+      font-size: 210%;
+      color: white;
+      text-transform: uppercase;
+    }
+  }
+}
+body.section-field-servicing, body.section-facilities-management {
+  .fs-qualities > .container > .feature-grid > .row > div {
+    h3 { text-transform: uppercase; }
+  }
+  .feature-grid .row > div {
+    //border-right: 1px solid $gold;
+  }
+  .fs-feature-grid > .container > .feature-grid > .row {
+    margin-bottom: 20px;
+    &> div {
+      @media (min-width:768px) { margin: 5px 0; }
+      &:last-child .inner{
+        @media (max-width:767px) { border: 1px solid white; }
+      }
+      .inner {
+        padding: 1px 10px;
+        cursor: pointer;
+        border: 1px solid white;
+        @media (max-width:767px) {
+          border-bottom: 0px;
+        }
+        &:hover {
+           background-color: white;
+           color: $gold;
+        }
+        h4 {
+          text-transform: uppercase;
+          line-height: 1.5;
+          margin-top: 0.5em;
+          @media (min-width:768px) {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+  .fs-feature-detail {
+    font-size: 95%;
+    .feature { margin-bottom: 1.5em; padding-right: 2em; }
+    h3 { color: white; font-size: 120%; }
+    $fadein-time: 0.5s;
+    div.container {
+      display: none;
+      position: relative;
+         -webkit-animation: feature-enter $fadein-time;
+           -moz-animation: feature-enter $fadein-time;
+          -ms-animation: feature-enter $fadein-time;
+          -o-animation: feature-enter $fadein-time;
+          animation: feature-enter $fadein-time;
+         &.active {
+           display: block;
+      }
+    }
+    img { max-width: 100%; }
+  }
+  #integrated-accounting .accounting-logos {
+    a { opacity: 1; margin-right: 15px; }
+    a.last { margin-right: 0; }
+    img { height: 60px; }
+  }
+}
+
+body.section-case-studies {
+  .case-studies-common.masthead strong {
+    font-size: 150%;
+    display: block
+  }
+  .case-studies-cases > .container > .row > div {
+    @media (max-width:767px) {
+      margin: 0 15px;
+      padding-bottom: 10px;
+      padding-top: 30px;
+      &:first-child { border-bottom: 1px solid white; padding-top:0px}
+    }
+    @media (min-width:768px) {
+      border-right: 1px solid white;
+      &:last-child { border-right: 0px; }
+      .text { margin-bottom: 30px; }
+    }
+    h3 {
+      margin-top: 0px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+
+body.section-contact {
+  form {
+    .form-control::-moz-placeholder {
+      color: $brown;
+    }
+    .find-out-more {
+      padding: 5px 13px;
+    }
+    .input-lg {
+      height: auto;
+      border-radius: 0px;
+      padding: 7px 10px;
+    }
+  }
+}
+// footer {
+//   position: relative;
+//   color: white;
+//   background-color: black;
+//   height: 300px;
+//   @media (max-width:767px) {
+//     .container { padding: 15px; }
+//     .contact-info-mobile {
+//       font-size: 80%;
+//       line-height: 1.2;
+//     }
+//     .logo {
+//       position: absolute;
+//       right: 15px;
+//       bottom: 15px;
+//     }
+//     .contact-info { display: none; }
+//   }
+//   @media (min-width:768px) {
+//     .contact-info {
+//       font-size: 60%;
+//       line-height: 60px;
+//       span {
+//         color: $gold;
+//         padding: 0 15px;
+//       }
+//     }
+//     .logo {
+//       float: right;
+//       line-height: 60px;
+//     }
+//     .contact-info-mobile { display: none; }
+//   }
+// }
+
+
+.blockquote {
+  font-size: inherit;
+}
+
+.case-study-logo {
+  padding-right: 10px;
+  height: 60px;
+}
+
+div.accounting-partner-logos{
+  div.accounting-partner-logo{
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+  }
+  img.logo{
+    width: 200px;
+  }
+  a.btn.btn-svg{
+    opacity: 0.8;
+    &:hover{
+      opacity: 1;
+    }
+  }
+}
+
+div.mbp {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  &::after {
+    content: ' ';
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url("/assets/img/mbp_Template.png");
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  img.screen {
+    opacity: 0;
+    max-width: 100%;
+  }
+  img:not(.screen) {
+    z-index: 0;
+    position: absolute;
+    left: 12%;
+    width: 78%;
+    height: 86%;
+    top: 6%;
+  }
+}
+
+
+div.iphone_v2 {
+  position: relative;
+  bottom: 380px;
+  left: 82%;
+  width: 100%;
+  max-width: 170px;
+  margin-bottom: -340px;
+  &::after {
+    content: ' ';
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url("/assets/img/iPhone6_Template.png");
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+  }
+  img.screen {
+    opacity: 0;
+  }
+  img:not(.screen) {
+    z-index: 4;
+    position: absolute;
+    left: 9%;
+    width: 81%;
+    height: 86%;
+    top: 7%;
+  }
+}
+
+div.mbp-iphone-combo {
+  div.mbp {
+    @media (max-width:768px) {
+      width: 80%;
+    }
+  }
+}
+
+div.mbp-iphone-combo {
+  @media (max-width:768px) {
+    padding-top: 30px;
+    height: 30vh;
+  }
+}
+
+div.mbp-iphone-combo {
+  div.iphone_v2 {
+    @media (max-width:768px) {
+      left: 66%;
+      max-width: 30%;
+      bottom: 35vh;
+    }
+  }
+}
+
+div.ipad {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  &::after {
+    content: ' ';
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url("/assets/img/iPadAir_Template.png");
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+  }
+  img.screen {
+    opacity: 0;
+  }
+  img:not(.screen) {
+    z-index: 2;
+    position: absolute;
+    left: 9%;
+    width: 81%;
+    height: 86%;
+    top: 7%;
+  }
+}
+
+div.iphone {
+  position: relative;
+  bottom: 350px;
+  left: 65%;
+  width: 100%;
+  max-width: 200px;
+  &::after {
+    content: ' ';
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url("/assets/img/iPhone6_Template.png");
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+  }
+  img.screen {
+    opacity: 0;
+  }
+  img:not(.screen) {
+    z-index: 4;
+    position: absolute;
+    left: 9%;
+    width: 81%;
+    height: 86%;
+    top: 7%;
+  }
+}
+
+div.apple-bullshit{
+    position: relative;
+
+    img {
+      max-width: 100%;
+    }
+}
+
+div.apple-bullshit img.ipad {
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+}
+
+div.apple-bullshit img.iphone {
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   width: 200px;
+}
+
+/* Pricing */
+.section-pricing {
+  .plan-compare {
+  }
+
+  .number-of-staff-slider {
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  .pricing-intro h2 {
+    color: white;
+  }
+
+  .pricing-block {
+    border-radius: 20px;
+
+    &.pricing-lite {
+      background-color: rgb(189,177,157);
+    }
+    &.pricing-standard {
+      background-color: rgb(179,166,144);
+    }
+    &.pricing-enterprise {
+      background-color: #A99C88;
+    }
+
+    .inner {
+      padding: 20px 10px 30px;
+    }
+
+    .inner {
+      .lt30 {
+        display: inline;
+      }
+
+      .gt30 {
+        display: none;
+      }
+    }
+
+    .inner.s30 {
+      .lt30 {
+        display: none;
+      }
+
+      .gt30 {
+        display: inline;
+      }
+    }
+
+    input[type=range] {
+        -webkit-appearance: none;
+        background-color: $gold;
+        height:10px;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+         -webkit-appearance: none;
+        background-color: $brown;
+        opacity: 1;
+        width: 10px;
+        height: 26px;
+    }
+
+    dl {
+      margin: 20px 0;
+      line-height: 100%;
+
+      dt {
+        font-weight: normal;
+      }
+
+      dd {
+        font-size: 1.1em;
+        font-weight: bold;
+      }
+    }
+
+    h4 {
+      padding: 10px;
+      border-radius: 10px;
+      text-transform: uppercase;
+      font-size: 140%;
+      background-color: $green;
+    }
+
+    .plan-button {
+      display: inline-block;
+      background-color: $brown;
+      padding: 10px;
+      padding-left: 15px;
+      border-radius: 10px;
+      position: relative;
+
+      padding-right: 35px;
+
+      &:after {
+        content: '›';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+        font-size: 2.5em;
+        line-height: 1em;
+        margin-top: -4px;
+      }
+    }
+
+    &.pricing-standard h4 {
+      background-color: #c12f3c;
+    }
+
+    dt {
+      color: $brown;
+    }
+
+    .contains {
+      margin: .7em 0;
+      line-height: 100%;
+      font-size: 130%;
+    }
+
+    .contact-us {
+      color: $brown;
+    }
+
+    .plan-list {
+      height: 17.5em;
+      color: $brown;
+      padding-left: 1em;
+      font-size: 90%;
+      line-height: 140%;
+
+      a, span {
+        color: white;
+      }
+    }
+
+    .breakeven {
+      background-color: white;
+      color: $green;
+      padding: 20px;
+      border-radius: 10px;
+
+      .t {
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+
+      .w {
+        text-transform: uppercase;
+        color: $gold;
+        line-height: 80%;
+        font-size: 80%;
+      }
+
+      .hours-per-month {
+        font-weight: bold;
+        line-height: 150%;
+        font-size: 120%;
+        padding-top: .5em;
+
+        .val {
+          font-size: 230%;
+        }
+      }
+    }
+  }
+
+  .pricing-extras {
+    thead {
+      text-transform: uppercase;
+      background-color: $green;
+
+      th {
+        color: white;
+        font-weight: bold;
+        padding-left: 15px;
+        line-height: 2.4;
+      }
+    }
+
+    tbody {
+      padding-bottom: 5px;
+      padding-left: 25px;
+      th {
+        text-transform: uppercase;
+        color: $green;
+        font-weight: bold;
+        text-align: left;
+        padding-left: 15px;
+        padding-right: 20px;
+      }
+
+      tr {
+        border-bottom: 1px solid $green;
+      }
+      tr:last-child {
+        border-bottom: 0;
+      }
+      td {
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-right: 50px;
+        padding-bottom: 10px;
+        &.pricing-cell{
+          text-align: left;
+          color: $green;
+
+        }
+      }
+    }
+  }
+
+  .bubbles {
+    text-align: center;
+    font-weight: normal;
+    img {
+      margin-bottom: 5px;
+      max-width: 90px;
+      margin: 25px auto 10px;
+    }
+    .no {
+      color: $gold;
+      font-weight: bold;
+      font-size: 110%;
+    }
+  }
+
+  .breakeven-bubble {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+
+    @media (max-width:768px) {
+      margin-bottom: 1em;
+    }
+
+    .title {
+      text-transform: uppercase;
+      color: $green;
+      font-size: 130%;
+    }
+
+    .icon {
+      color: $green;
+      font-size: 400%;
+      line-height: .5em;
+    }
+  }
+
+  .plan-footer {
+    color: $brown;
+  }
+
+}

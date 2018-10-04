@@ -1,0 +1,207 @@
+.pricing-intro{
+  padding: 50px 0 100px!important;
+  @media screen and (max-width: 768px){
+    padding: 50px 0!important;
+  }
+}
+
+.pricing-plans{
+  padding: 150px 0 0;
+  background-color: #f6f9fc;
+  @media screen and (max-width: 768px){
+    padding: 50px 0 0;
+  }
+  .plan-list{
+    border-radius: 0 0 4px 4px;
+    background-color: #f6f9fc;
+    padding: 10px;
+    margin-bottom: 0px;
+
+    li{
+      color: $mainGrey;
+      font-family: $mainFont;
+      font-weight: 200;
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+
+      span{
+        text-transform: capitalize;
+      }
+    }
+  }
+  .plan-compare{
+    background-color: #e6ebf1;
+    padding: 10px 7px;
+    border-radius: 4px;
+    margin-bottom: 100px;
+    .pricing-block{
+      padding: 0 3px!important;
+
+      .contains{
+        padding: 10px;
+        color: $mainGrey;
+        font-family: $mainFont;
+        font-size: 20px;
+        background-color: #f6f9fc;
+        border-bottom: 1px solid #e6ebf1;
+        margin-top: 10px;
+        border-radius: 4px 4px 0 0;
+      }
+      .features{
+        padding: 10px;
+        color: #ffffff;
+        font-family: $mainFont;
+        font-size: 20px;
+        background-color: #f6f9fc;
+        border-radius: 4px 4px 0 0px;
+        border-bottom: 1px solid #d7e5ff;
+        margin-top: 10px;
+      }
+    }
+    .price-header{
+      height: 70px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #67a5e5;
+      position: relative;
+      @media screen and (max-width: 768px){
+        margin-top: 10px;
+      }
+
+      h4{
+        color: white;
+        font-family: $mainFont;
+        font-size: 22px;
+        letter-spacing: 1px;
+        margin: 0px;
+        font-weight: 600;
+      }
+
+      &::before{
+        content: "";
+        position: absolute;
+        left: -5px;
+        top: calc(50% - 16px);
+        width: 15px;
+        height: 32px;
+        background: url('/assets/img/icon.svg');
+        @media screen and (max-width: 768px){
+          display: none;
+        }
+      }
+    
+      &::after{
+        content: "";
+        position: absolute;
+        z-index: 4;
+        right: -6px;
+        top: calc(50% - 10px);
+        width: 20px;
+        height: 20px;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        border-radius: 3px;
+        background-color: #67a5e5;
+
+        @media screen and (max-width: 768px){
+          display: none;
+        }
+      }
+    }
+
+    .beginning{
+      background: #5596bf;
+      margin-bottom: 10px;
+      &::before{
+        background: none!important;
+      }
+      &::after{
+        background-color: #5596bf;
+      }
+    }
+    .end{
+      background: #77d2f8;
+      &::after{
+        background: none!important;
+      }
+    }
+  }
+}
+
+
+.pricing-deals{
+  padding: 0!important;
+
+  h2{
+    text-align: center;
+  }
+  p{
+    text-align: center;
+  }
+  .feature-line{
+    width: 140px;
+    height: 4px;
+    margin: 50px auto;
+    background-color: $feature-blue;
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #00a19a), color-stop(100%, #00adef));
+  
+  }
+}
+
+.pricing-process{
+  padding: 100px 0;
+  @media screen and (max-width: 768px){
+    padding: 0px;
+  }
+
+  h2{
+    text-align: center;
+  }
+
+  p{
+    text-align: center;
+    margin-bottom: 75px;
+  }
+}
+
+.pricing-extras{
+  padding: 50px 0 100px;
+
+  thead{
+    margin-bottom: 10px;
+  }
+  tr{
+    height: 50px;
+  }
+  th{
+    color: $mainGrey;
+    font-family: $mainFont;
+    vertical-align: top;
+    @media screen and (max-width: 768px){
+      font-size: 13px;
+      padding-right: 10px;
+    }
+  }
+
+  .pricing-cell{
+    color: $mainGrey;
+    font-family: $mainFont;
+    vertical-align: top;
+  }
+}
+
+.pricing-question-form{
+  margin: auto;
+  max-width: 500px;
+}
+
+td{
+  p{
+    @media screen and (max-width: 768px){
+      font-size: 10px!important;
+    }
+  }
+}

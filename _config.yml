@@ -1,0 +1,4 @@
+exclude: [".gitignore", "*.sublime-*"]
+sass:
+    style: compressed
+
