@@ -947,7 +947,10 @@
 
 .home-fund{
   padding-top: 90px;
-  padding-bottom: 70px;
+
+  .container{
+  border-bottom: solid 1px #d3d7dd;
+  }
 
   h1{
     font-family: $mainFont;
@@ -969,8 +972,8 @@
     color: #6b7c93;
     margin-bottom: 24px;
   }
-  
-  p{
+
+  .fund-info{
     font-family: $mainFont;
     font-size: 18px;
     line-height: 1.61;
@@ -979,5 +982,66 @@
     color: #6b7c93;
     max-width: 620px;
     margin: 0 auto 40px;
+  }
+
+  .learn-action{
+    justify-content: center;
+    padding-bottom: 70px;
+    p{
+      font-family: $mainFont;
+      font-size: 15px;
+      font-weight: 600;
+      color: #20c4ee;
+    }
+  }
+}
+
+.home-partners{
+  padding-top: 90px;
+  padding-bottom: 120px;
+  h1{
+    font-family: $mainFont;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    color: #1a324e;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .partners-info{
+    font-family: $mainFont;
+    font-size: 18px;
+    line-height: 1.61;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #6b7c93;
+    max-width: 778px;
+    margin: 0 auto 40px;
+  }
+
+  .partners-logo-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    img{
+      max-height: 32px;
+      width: auto;
+    }
+  }
+}
+
+.home-news{
+  background-color: #f3f4f7;
+  padding-top: 92px;
+  padding-bottom: 152px;
+  h1{
+    font-family: $mainFont;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    color: #1a324e;
+    margin-bottom: 44px;
   }
 }
