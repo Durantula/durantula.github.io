@@ -1,0 +1,22 @@
+.sub-navigation{
+  .container{
+    border-bottom: solid 1px #d3d7dd;
+  }
+  .service-nav{
+    padding-top: 54px;
+    padding-bottom: 20px;
+    display: flex;
+    p{
+      font-family: $mainFont;
+      font-size: 18px;
+      font-weight: 600;
+      color: #d1d0d0;
+      margin-right: 42px;
+      margin-bottom: 0px;
+    }
+    .active{
+      color:#20c4ee;
+    }
+
+  }
+}
