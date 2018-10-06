@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Accounting Integration | Uptick</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
   <link rel="stylesheet" href="/assets/css/master.css" >
   <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,600" rel="stylesheet">
   <script src="https://cdn.rawgit.com/icons8/titanic/master/dist/js/titanic.min.js"></script>
@@ -1293,6 +1295,28 @@
 
 <script>
   stickybits('.sticky-navigation', {useStickyClasses: true});
+</script>
+
+<script src="/assets/js/owl.carousel.min.js"></script>
+
+<script>
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    dots:false,
+    margin:10,
+    nav:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+  })
 </script>
 
 <script>
