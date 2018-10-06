@@ -3,6 +3,7 @@
   padding: 282px 0 0px;
   background-color: #fff;
   height: 1173px;
+  margin-bottom: 72px;
   @media screen and (max-width: 768px){
     padding: 130px 0 0px;
   }
@@ -874,11 +875,6 @@
   margin: auto;
 }
 
-.stats-container{
-  margin: 0 30px;
-}
-
-
 .home-services{
   background-color: #f3f4f7;
   padding-bottom: 70px;
@@ -915,6 +911,15 @@
       line-height: 1.61;
       letter-spacing: 0.2px;
       color: #6b7c93;
+    }
+
+    .home-service-description{
+      font-family: $mainFont;
+      font-size: 18px;
+      line-height: 1.61;
+      letter-spacing: 0.2px;
+      color: #6b7c93;
+      margin-bottom: 50px;
     }
   }
 }
