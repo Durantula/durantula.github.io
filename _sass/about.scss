@@ -1,0 +1,122 @@
+.about-header{
+  background-color: #f3f4f7;
+  padding-top: 90px;
+  padding-bottom: 70px;
+
+  h1{
+    font-family: $mainFont;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    color: #1a324e;
+    padding-bottom: 40px;
+  }
+
+  h3{
+    font-family: $mainFont;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    color: #6b7c93;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  .heading{
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    img{
+      margin-right: 18px;
+    }
+    p{
+      font-family: $mainFont;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+      color: #0c3769;
+      margin-bottom: 0px;
+    }
+  }
+
+  p{
+    font-family: $mainFont;
+    font-size: 18px;
+    line-height: 1.61;
+    letter-spacing: 0.2px;
+    color: #6b7c93;
+    font-weight: 200;
+  }
+}
+
+
+.about-team{
+  padding-top: 62px;
+  padding-bottom: 70px;
+  border-bottom: solid 1px #d3d7dd;
+
+  h1{
+    font-family: $mainFont;
+    margin-bottom: 41px;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    color: #1a324e;
+  }
+
+    
+  h3{
+    margin-bottom: 29px;
+    font-family: $mainFont;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    color: #6b7c93;
+    text-transform: uppercase;
+  }
+
+  p{
+    font-family: $mainFont;
+    font-size: 18px;
+    line-height: 1.61;
+    letter-spacing: 0.2px;
+    color: #6b7c93;
+    margin-bottom: 29px;
+  }
+}
+
+.advisory-team{
+  padding-top: 100px;
+  padding-bottom: 95px;
+  h3{
+    font-family: $mainFont;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    color: #6b7c93;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+  p{
+    font-family: $mainFont;
+    font-size: 18px;
+    line-height: 1.61;
+    letter-spacing: 0.2px;
+    color: #6b7c93;
+    margin-bottom: 30px;
+  }
+}
+
+.team-box{
+  display: flex;
+  flex-wrap: wrap;
+  
+  .team-member{
+    height: 220px;
+    width: 167px;
+    margin-bottom: 19px;
+    margin-right: 19px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
