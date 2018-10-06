@@ -77,3 +77,67 @@
     }
   }
 }
+
+.service-projects{
+  padding-bottom: 90px;
+
+  h1{
+    font-family: $mainFont;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    color: #6b7c93;
+    margin-bottom: 42px;
+    text-transform: uppercase;
+  }
+  .service-progress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    .circle{
+      height: 138px;
+      width: 138px;
+      border-radius: 50%;
+      background-color: blue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 96px;
+      box-shadow: 0 2px 13px 0 rgba(107, 124, 147, 0.42);
+
+      img{
+        width: 70px;
+        height: auto;
+      }
+    }
+  }
+  .service-offset-right{
+    margin-right: -107px;
+  }
+  .service-offset-left{
+    margin-left: -107px;
+  }
+}
+
+.service-post{
+  background-color: #f3f4f7;
+  padding-top: 90px;
+  padding-bottom: 70px;
+  h1{
+    text-align: center;
+    margin-bottom:26px;
+    font-family: $mainFont;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    color: #1a324e;
+  }
+  p{
+    font-family: $mainFont;
+    font-size: 26px;
+    line-height: 1.42;
+    letter-spacing: 0.2px;
+    color: #6b7c93;
+  }
+}
