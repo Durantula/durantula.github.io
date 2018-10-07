@@ -1,6 +1,11 @@
 .job-sub-navigation{
   padding-top: 171px;
   border-bottom: solid 1px #d3d7dd;
+
+  @media screen and (max-width: 768px){
+    padding-top: 120px;
+  }
+
   .back{
     display: flex;
     align-items: center;
@@ -14,6 +19,88 @@
       font-weight: 600;
       color: #6b7c93;
       margin-bottom: 0px;
+    }
+  }
+}
+
+.job-description{
+  margin-bottom: 60px;
+  .title{
+    font-family: $mainFont;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    color: #1a324e;
+    margin-top: 80px;
+    margin-bottom: 16px;
+    @media screen and (max-width: 768px){
+      font-size: 24px;
+    }
+  }
+  .location{
+    text-transform: uppercase;
+    font-family: $mainFont;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    color: #6b7c93;
+    margin-bottom: 64px;
+  }
+
+  .section-title{
+    font-family: $mainFont;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    color: #0c3769;
+    text-align: left;
+  }
+
+  .content{
+    font-family: $mainFont;
+    font-size: 18px;
+    line-height: 1.61;
+    letter-spacing: 0.2px;
+    color: #6b7c93;
+    margin-bottom: 20px;
+    font-weight: 300;
+  }
+
+  ul{
+    padding-left: 15px;
+  }
+
+  li{
+    font-family: $mainFont;
+    font-size: 18px;
+    line-height: 1.61;
+    letter-spacing: 0.2px;
+    color: #6b7c93;
+    font-weight: 300;
+  }
+}
+
+.apply-now{
+  width: 100%;
+  height: 93px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.14);
+  margin-bottom: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p{
+    font-family: $mainFont;
+    font-size: 22px;
+    line-height: 1.32;
+    letter-spacing: 0.2px;
+    color: #6b7c93;
+    margin-bottom: 0px;
+    font-weight: 300;
+
+    @media screen and (max-width: 768px){
+      font-size: 18px;
     }
   }
 }
