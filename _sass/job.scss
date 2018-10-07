@@ -1,0 +1,19 @@
+.job-sub-navigation{
+  padding-top: 171px;
+  border-bottom: solid 1px #d3d7dd;
+  .back{
+    display: flex;
+    align-items: center;
+    margin-bottom: 17px;
+    img{
+      margin-right: 15px;
+    }
+    p{
+      font-family: $mainFont;
+      font-size: 18px;
+      font-weight: 600;
+      color: #6b7c93;
+      margin-bottom: 0px;
+    }
+  }
+}

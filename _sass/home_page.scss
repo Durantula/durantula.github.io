@@ -59,13 +59,13 @@
       margin-top: 200px;
     }
     h1{
-      font-family: "Raleway",sans-serif;
+      font-family: $mainFont;
       color: #1a324e;
-      font-weight: 600;
+      font-weight: 700;
       margin-bottom: 32px;
     }
     .about-text{
-      font-family: "Raleway",sans-serif;
+      font-family: $mainFont;
       color: #6b7c93;
       font-size: 18px;
       letter-spacing: 0.2px;
@@ -82,7 +82,7 @@
     margin-bottom: 20px;
     h1{
       color: #1a324e;
-      font-family: "Raleway",sans-serif;
+      font-family: $mainFont;
       margin: 0px;
       font-size: 42px;
       font-weight: 700;
@@ -96,7 +96,7 @@
       font-size:19.5px;
       color: #6b7c93;
       font-weight: 200;
-      font-family: "Raleway",sans-serif;
+      font-family: $mainFont;
     }
   }
   a{
@@ -564,7 +564,7 @@
       letter-spacing: 1px;
       font-weight: 100;
       color: #525f7f;
-      font-family: "Raleway",sans-serif;
+      font-family: $mainFont;
       margin-bottom: 0px;
       text-align: left;
       text-transform: uppercase;
@@ -574,7 +574,7 @@
     h2{
       font-size: 48px;
       color: #525f7f;
-      font-family: "Raleway",sans-serif;
+      font-family: $mainFont;
       margin-bottom: 20px;
       text-align: left;
       margin-right: 20px;

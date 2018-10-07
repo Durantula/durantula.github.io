@@ -1,8 +1,29 @@
+@font-face {
+  font-family: avenir;
+  font-weight: 300;
+  src: url("/assets/fonts/Avenir300.otf") format("opentype");
+}
+
+@font-face {
+  font-family: avenir;
+  font-weight: 500;
+  src: url("/assets/fonts/Avenir500.otf") format("opentype");
+}
+
+@font-face {
+  font-family: avenir;
+  font-weight: 700;
+  src: url("/assets/fonts/Avenir700.otf") format("opentype");
+}
+
 @media (min-width: 1200px) {
   .container{
       max-width: 964px;
   }
 }
+
+
+
 
 a{
   text-decoration: none!important;
