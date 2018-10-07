@@ -78,7 +78,6 @@
     letter-spacing: 0.3px;
     color: #1a324e;
   }
-
     
   h3{
     margin-bottom: 29px;
@@ -125,14 +124,15 @@
 .team-box{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   
   .team-member{
     height: 220px;
     width: 167px;
     margin-bottom: 19px;
-    margin-right: 19px;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+     border: solid 1px #d1d0d0;
   }
 }
