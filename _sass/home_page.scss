@@ -1,3 +1,4 @@
+
 .banner{
   position: relative;
   padding: 282px 0 0px;
@@ -5,7 +6,11 @@
   height: 1173px;
   margin-bottom: 72px;
   @media screen and (max-width: 768px){
-    padding: 130px 0 0px;
+    margin-bottom: 0px;
+    height: auto;
+    padding-top: 200px;
+    background-position: center center;
+
   }
   &-background-image{
     position: absolute;
@@ -50,6 +55,9 @@
     z-index: 3;
     margin-top: 309px;
     padding-top: 91px;
+    @media screen and (max-width: 768px){
+      margin-top: 200px;
+    }
     h1{
       font-family: "Raleway",sans-serif;
       color: #1a324e;
@@ -63,6 +71,9 @@
       letter-spacing: 0.2px;
       line-height: 1.61;
       margin-bottom: 68px;
+      @media screen and (max-width: 768px){
+        margin-bottom: 40px;
+      }
     }
   }
    
@@ -77,7 +88,7 @@
       font-weight: 700;
       text-transform: uppercase;
       @media screen and (max-width: 768px){
-        font-size: 20px;
+        font-size: 30px;
       }
     }
 
@@ -96,6 +107,7 @@
 .home-stats{
   margin-bottom: 20px;
   margin-top: 30px;
+  
 
   p{
     @media screen and (max-width: 992px) {
@@ -844,6 +856,11 @@
 }
 
 .about-stats{
+
+  @media screen and (max-width: 768px){
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
   .mainText{
     font-family: $mainFont;
     font-size: 40px;
@@ -873,12 +890,16 @@
 .stats-box{
   width: 120px;
   margin: auto;
+  @media screen and (max-width: 576px){
+    margin-top: 13px;
+  }
 }
 
 .home-services{
   background-color: #f3f4f7;
   padding-bottom: 70px;
   padding-top: 90px;
+
   h1{
     font-family: $mainFont;
     font-size: 40px;
@@ -887,6 +908,9 @@
     color: #1a324e;
     text-align: center;
     padding-bottom: 32px;
+    @media screen and (max-width: 768px){
+      font-size: 30px;
+    }
 
   }
   
@@ -896,6 +920,10 @@
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14);
     padding: 32px 24px;
     max-width: 290px;
+    @media screen and (max-width: 992px){
+      margin: auto;
+      margin-bottom: 40px;
+    }
 
     h2{
       text-transform: uppercase;
@@ -1029,10 +1057,15 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 
     img{
       max-height: 32px;
       width: auto;
+      @media screen and (max-width: 992px){
+        margin-right: 20px;
+        margin-bottom: 20px;
+      }
     }
   }
 }
@@ -1042,17 +1075,18 @@
   padding-bottom: 155px;
   position: relative;
 
-  &:before{
+  &::before{
     content: "";
     position: absolute;
-    width: 200%;
-    height: 100%;
-    top: 0%;
-    left: -50%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     z-index: -1;
     background: #f3f4f7;
-    transform: rotate(-7deg);
+    transform: skewY(-7deg);
   }
+
   h1{
     font-family: $mainFont;
     font-size: 40px;
@@ -1061,6 +1095,9 @@
     color: #1a324e;
     margin-bottom: 44px;
     margin-top: 15px;
+    @media screen and (max-width: 992px){
+      text-align: center;
+    }
   }
 
   .blog-image{
@@ -1077,6 +1114,10 @@
   .blog-box{
     max-width: 290px;
     cursor: pointer;
+    @media screen and (max-width: 992px){
+      margin: auto;
+      margin-bottom: 40px;
+    }
   }
   .blog-heading-box{
     display: flex;
@@ -1118,6 +1159,9 @@
     box-shadow: 2px 2px 13px 0 rgba(32, 196, 238, 0.53);
     border: solid 1px #20c4ee;
     color: #20c4ee!important;
+    @media screen and (max-width: 992px){
+      margin: auto
+    }
 
     &:hover{
       box-shadow: 2px 2px 13px 0 rgba(32, 196, 238, 0.53);
@@ -1132,13 +1176,20 @@
 
   .join-box{
     width: 816px;
-    height: 335px;
+    max-width: 95%;
     padding: 70px 75px;
     border-radius: 2px;
     margin: auto;
     margin-top: -80px;
     background-color: #ffffff;
     box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.14);
+
+    @media screen and (max-width: 992px){
+      padding: 30px;
+    }
+    @media screen and (max-width: 768px){
+      padding: 30px 15px;
+    }
 
     h1{
       font-family: $mainFont;
@@ -1165,15 +1216,26 @@
       align-items: center;
       justify-content: space-between;
 
+      @media screen and (max-width: 992px){
+        flex-direction: column;
+      }
+
       .join-socials{
         img{
           width: 43px;
           height: auto;
           margin-right: 19px;
         }
+        @media screen and (max-width: 992px){
+          margin-bottom: 20px;
+        }
       }
       .join-email{
-        height: 50px;
+        @media screen and (max-width: 992px){
+          display: flex;
+          flex-direction: column;
+        }
+
         .email-form{
           border-radius: 4px;
           background-color: #f6f9fc;
@@ -1189,6 +1251,13 @@
           box-shadow: 2px 2px 13px 0 rgba(32, 196, 238, 0);
           margin-right: 25px;
           outline: none;
+
+          @media screen and (max-width: 992px){
+            margin: auto;
+            margin-bottom: 10px;
+            max-width: 95%;
+            
+          }
 
           &::placeholder{
             font-family: $mainFont;
@@ -1211,6 +1280,11 @@
           font-weight: 900;
           color: #ffffff;
           outline: none;
+
+          @media screen and (max-width: 992px){
+            width: 200px;
+            margin: auto;
+          }
         }
       }
     }

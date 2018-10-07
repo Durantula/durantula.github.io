@@ -1,7 +1,23 @@
 .about-header{
+  position: relative;
   background-color: #f3f4f7;
   padding-top: 90px;
   padding-bottom: 70px;
+
+  // &:before{
+  //   content: "";
+  //   position: absolute;
+  //   width: 700px;
+  //   height: 100%;
+  //   top: 0px;
+  //   right: 0px;
+  //   z-index: 1;
+  //   background: black;
+  //   border-bottom: 100px solid #333;
+  //   border-left: 50px solid transparent;
+
+
+  // }
 
   h1{
     font-family: $mainFont;
