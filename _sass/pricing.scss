@@ -12,8 +12,8 @@
   background-position: center center;
   background-size: cover;
   padding-bottom: 100px;
-  @media screen and (max-width: 768px){
-    padding: 50px 0 0;
+  @media screen and (max-width: 992px){
+    padding: 50px 0;
   }
   .plan-list{
     border-radius: 0 0 4px 4px;
@@ -22,6 +22,9 @@
     margin-bottom: 0px;
     height: 500px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14);
+    @media screen and (max-width: 992px){
+      // margin-bottom: 20px;
+    }
 
     li{
       color: #1b63a4;
@@ -48,10 +51,11 @@
     padding: 10px 7px;
     border-radius: 4px;
     margin-bottom: 100px;
-    width: 964px;
     margin: auto;
     .pricing-block{
       padding: 0 3px!important;
+      
+      
 
       .contains{
         padding: 10px;
@@ -84,7 +88,7 @@
       position: relative;
       margin-bottom: 10px;
       box-shadow: 1px 1px 5px 0 rgba(107, 124, 147, 0.4);
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 992px){
         margin-top: 10px;
       }
 
@@ -106,7 +110,7 @@
         width: 15px;
         height: 32px;
         background: url('/assets/img/icon.svg');
-        @media screen and (max-width: 768px){
+        @media screen and (max-width: 992px){
           display: none;
         }
       }
@@ -124,7 +128,7 @@
         border-radius: 3px;
         background-color: #1b63a4;
 
-        @media screen and (max-width: 768px){
+        @media screen and (max-width: 992px){
           display: none;
         }
       }
@@ -212,7 +216,7 @@
     color: $mainGrey;
     font-family: $mainFont;
     vertical-align: top;
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 992px){
       font-size: 13px;
       padding-right: 10px;
     }

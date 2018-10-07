@@ -32,6 +32,7 @@
     font-weight: 500;
     letter-spacing: 0.3px;
     color: #1a324e;
+    
   }
 
   .main-summary{
@@ -41,6 +42,13 @@
     letter-spacing: 0.2px;
     text-align: right;
     color: #20c4ee;
+    @media screen and (max-width: 768px){
+      text-align: left;
+    }
+  }
+
+  img{
+    max-width: 95%;
   }
 
   p{
@@ -92,8 +100,9 @@
   }
   .service-progress{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
   
     .circle{
       height: 138px;
@@ -103,9 +112,14 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-right: 96px;
       box-shadow: 0 2px 13px 0 rgba(107, 124, 147, 0.42);
-
+      margin-right: 0px;
+      @media screen and (max-width: 768px){
+        margin: 0 30px 10px;
+      }
+      @media screen and (max-width: 576px){
+        margin: 0 0px 10px;
+      }
       img{
         width: 70px;
         height: auto;
@@ -114,9 +128,15 @@
   }
   .service-offset-right{
     margin-right: -107px;
+    @media screen and (max-width: 992px) {
+      margin-right: 0px;
+    } 
   }
   .service-offset-left{
     margin-left: -107px;
+    @media screen and (max-width: 768px) {
+      margin-left: 0px;
+    } 
   }
 }
 
@@ -130,13 +150,13 @@
   &:before{
     content: "";
     position: absolute;
-    width: 200%;
-    height: 100%;
-    top: 0%;
-    left: -50%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     z-index: -1;
     background: #f3f4f7;
-    transform: rotate(-7deg);
+    transform: skewY(-7deg);
   }
 
 
@@ -148,6 +168,9 @@
     font-weight: 500;
     letter-spacing: 0.3px;
     color: #1a324e;
+    @media screen and (max-width: 576px){
+      font-size: 30px;
+    }
   }
   p{
     font-family: $mainFont;
@@ -155,6 +178,9 @@
     line-height: 1.42;
     letter-spacing: 0.2px;
     color: #6b7c93;
+    @media screen and (max-width: 576px){
+      font-size: 20px;
+    }
   }
 
   ul{
@@ -224,6 +250,13 @@
     letter-spacing: 0.2px;
     text-align: right;
     color: #fff;
+    @media screen and (max-width: 768px){
+      text-align: left;
+    }
+    @media screen and (max-width: 576px){
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
   }
 
   p{
@@ -237,9 +270,16 @@
   .corporate-bullet-points{
     display: flex;
     margin-bottom: 40px;
+    @media screen and (max-width: 768px){
+      margin-bottom: 30px;
+    }
     .logo{
       img{
         margin-right: 40px;
+
+        @media screen and (max-width: 768px){
+          margin-right: 20px;
+        }
       }
     }
     .info{
