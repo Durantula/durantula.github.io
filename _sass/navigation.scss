@@ -15,6 +15,8 @@
   }
 
   &-brand{
+    position: absolute;
+
     @media screen and (max-width: 992px){
       margin-right: 0px;
     }
@@ -24,10 +26,10 @@
   }
 
   &-nav{
-    margin-top: 30px;
+    
 
     .nav-item{
-      padding: 0 10px;
+      padding: 10px 10px;
     }
 
 
@@ -75,11 +77,11 @@
 
     li{
       a{
-        color: #fff;
         font-family: $mainFont;
-        font-size: 14px;
-        // text-transform: uppercase;
-        letter-spacing: 1px;
+        font-size: 18px;
+        letter-spacing: 0.2px;
+        color: #6b7c93;
+        font-weight: 300;
       }
     }
   }
@@ -183,7 +185,7 @@
       height: 60px!important;
       display: flex;
       align-items: center;
-      padding: 0 20px;
+      padding: 20px 20px;
 
       &:hover, &:active{
         @media screen and (max-width:992px){
@@ -194,14 +196,16 @@
         }
       }
       .nav-link{
-        color: $mainGrey;
-        // padding: 0 20px!important;
-        width: 100%;
-        line-height: 60px;
-        height: 60px;    
-        font-weight: 600;
-        padding: 0 10px;
-        
+        padding: 0 20px;
+        font-family: $mainFont;
+        font-size: 18px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 0.2px;
+        color: #6b7c93;
+              
         @media screen and (max-width: 992px) {
           color: #d1d1d1
         }
@@ -473,7 +477,7 @@
     
 
     .nav-link{
-      color: $mainGrey;
+      color: #6b7c93;
     }
     .navigation-action{
       border-color: $mainGrey;
