@@ -17,6 +17,11 @@
 
   &-brand{
     position: absolute;
+    font-family: $mainFont;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: right;
+    color: #6b7c93;
 
     @media screen and (max-width: 992px){
       margin-right: 0px;
