@@ -26,6 +26,30 @@
       // margin-bottom: 20px;
     }
 
+    .learn-action{
+      position: absolute;
+      bottom: 0px;
+      margin: 0px;
+      margin-bottom: 30px;
+
+      p{
+        margin-left: 0px;
+        font-weight: 500;
+
+        font-family: $mainFont;
+        font-size: 15px;
+        font-weight: 600;
+        color: #20c4ee;
+      }
+
+      .dark-blue{
+        color: #0b3769;
+      }
+      .medium-blue{
+        color: #1b63a4
+      }
+    }
+
     li{
       color: #1b63a4;
       font-family: "Raleway",sans-serif;
