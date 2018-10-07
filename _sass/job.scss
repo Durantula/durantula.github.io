@@ -1,3 +1,30 @@
+.job-page{
+  padding-bottom: 80px;
+  position: relative;
+
+  .cool-rectangle{
+    position: absolute;
+    bottom: 137px;
+    width: 100%;
+    height: 534px;
+
+    &::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      background: #f3f4f7;
+      transform: skewY(-7deg);
+    }
+
+  }
+
+
+}
+
 .job-sub-navigation{
   padding-top: 171px;
   border-bottom: solid 1px #d3d7dd;
@@ -86,7 +113,7 @@
   border-radius: 2px;
   background-color: #ffffff;
   box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.14);
-  margin-bottom: 82px;
+  // margin-bottom: 82px;
   display: flex;
   align-items: center;
   justify-content: center;
