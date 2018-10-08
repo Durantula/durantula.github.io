@@ -1,0 +1,221 @@
+.labs{
+  position: relative;
+  &-header{
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(/assets/img/annie-spratt-604126-unsplash@3x.jpg);
+    height: 611px;
+    @media screen and (max-width: 768px){
+      height: 440px;
+    }
+  }
+
+  .colour-transparent-filter{
+    z-index: 1;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    // background-blend-mode: darken;
+    background-image: linear-gradient(187deg, rgba(29, 44, 65, 0.98), rgba(255, 255, 255, 0));
+  }
+}
+
+.labs-nav{
+  position: relative;
+  z-index: 1;
+  .container{
+    border-bottom-color: white!important;
+  }
+  p{
+    color: white!important;
+  }
+  .active{
+    color: #00adef!important;
+  }
+}
+
+.labs-summary{
+  
+  z-index: 3;
+  position: relative;
+  h1{
+    font-family: $mainFont;
+    font-size: 40px;
+    font-weight:700;
+    letter-spacing: 0.3px;
+    color: #1a324e;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  p{
+    font-family: $mainFont;
+    font-size: 26px;
+    line-height: 1.42;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #1b63a4;
+    margin-bottom: 70px;
+    font-weight: 300;
+    @media screen and (max-width: 768px){
+      font-size: 15px;
+    }
+  }
+
+  
+  &::before{
+    content: "";
+    position: absolute;
+    top: -120px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: #fff;
+    transform: skewY(-7deg);
+    @media screen and (max-width: 768px){
+      top: -70px;
+    }
+  }
+}
+
+.labs-info{
+  border-bottom: solid 1px #d3d7dd;
+}
+
+.accelerator{
+  position: relative;
+  z-index: 4;
+  padding-top: 90px;
+  padding-bottom: 70px;
+}
+.accelerator-heading{
+  font-family: $mainFont;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  text-align: right;
+  color: #1a324e;
+  margin-bottom: 39px;
+  @media screen and (max-width: 768px){
+    text-align: center;
+  }
+}
+
+.accelerator-text{
+  font-family: $mainFont;
+  font-size: 18px;
+  line-height: 1.61;
+  letter-spacing: 0.2px;
+  text-align: right;
+  color: #6b7c93;
+  margin-bottom: 20px;
+  font-weight: 300;
+  @media screen and (max-width: 768px){
+    text-align: center;
+  }
+}
+
+.accelerator-info-box{
+  padding: 32px;
+  background-color: #f6f9fc;
+  @media screen and (max-width: 768px){
+    padding: 7px;
+  }
+  .heading{
+    font-family: $mainFont;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.81;
+    letter-spacing: 0.1px;
+    color: #20c4ee;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+  }
+
+  .accelerator-bullet{
+    display: flex;
+    align-items: right;
+    margin-bottom: 25px;
+    img{
+      margin-right: 25px;
+    }
+    p{
+      font-family: $mainFont;
+      font-size: 18px;
+      letter-spacing: 0.2px;
+      color: #6b7c93;
+      margin-bottom: 0px;
+      @media screen and (max-width: 768px){
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.incubator{
+  background-position: center center;
+  background-size: cover;
+  background-image: url(/assets/img/grid-background.svg);
+  background-repeat: no-repeat;
+  padding-top: 90px;
+  padding-bottom: 90px;
+
+  h1{
+    font-family: $mainFont;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: #1a324e;
+    margin-bottom: 39px;
+  }
+  h3{
+    font-family: $mainFont;
+    font-size: 18px;
+    line-height: 1.61;
+    letter-spacing: 0.2px;
+    color: #6b7c93;
+    margin-bottom: 28px;
+    max-width: 700px;
+    font-weight: 300;
+  }
+}
+
+.incubator-box{
+  margin-bottom: 50px;
+  .circle{
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 1px 2px 7px 0 rgba(107, 124, 147, 0.23);
+    margin-bottom: 25px;
+    img{
+      height: 40px;
+      width: auto;
+    }
+  }
+  h4{
+    font-family: $mainFont;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.32;
+    letter-spacing: 0.2px;
+    color: #0c3769;
+    margin-bottom: 14px;
+    font-weight: 700;
+  }
+
+  p{
+    font-family: $mainFont;
+    font-size: 18px;
+    line-height: 1.61;
+    letter-spacing: 0.2px;
+    color: #6b7c93;
+    font-weight: 300;
+  }
+}

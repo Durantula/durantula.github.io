@@ -335,6 +335,13 @@
   transition: 0.5s;
 }
 .main-nav.js-is-sticky {
+
+  .white-transparent{
+      background-color: #f6f9fc !important;
+      .nav-link{
+        color: #525f7f!important;
+      }
+  }
   .navbar{
     background-color: #f9f9f9;
     box-shadow: 0 2px 10px rgba(0,0,0,.25);
