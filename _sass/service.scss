@@ -93,6 +93,8 @@
 
 .service-projects{
   padding-bottom: 90px;
+  position: relative;
+  z-index: 10;
 
   h1{
     font-family: $mainFont;
