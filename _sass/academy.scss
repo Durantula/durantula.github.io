@@ -74,6 +74,9 @@
     max-width: 614px;
     margin: auto;
     margin-bottom: 40px;
+    @media screen and (max-width: 768px){
+      font-size: 12px;
+    }
   }
 
   .contact{
@@ -82,7 +85,6 @@
     align-items: center;
     justify-content: center;
     margin: 0px;
-    border-bottom: solid 1px #d1d0d0;
     margin-bottom: 86px;
     padding-bottom: 60px;
     p{
@@ -105,6 +107,7 @@
       }
     }
   }
+
 }
 
 .academy-logo{
@@ -114,4 +117,8 @@
     height: 30px;
     width: auto;
   }
+}
+
+.contact-border{
+  border-bottom: solid 1px #d1d0d0;
 }
