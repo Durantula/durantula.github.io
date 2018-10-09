@@ -17,12 +17,16 @@
   }
 
   &-brand{
-    position: relative;
+    position: absolute;
     font-family: $mainFont;
     font-size: 22px;
     font-weight: 700;
     text-align: right;
     color: #6b7c93;
+
+    @media screen and (max-width: 768px){
+      position: relative
+    }
 
     @media screen and (max-width: 992px){
       margin-right: 0px;
@@ -37,6 +41,9 @@
 
     .nav-item{
       padding: 10px 10px;
+      @media screen and (max-width: 992px){
+        padding: 10px 3px
+      }
     }
 
 
