@@ -10,13 +10,14 @@
   z-index: 200;
   transition: 0.5s;
   background-color: transparent;
+  justify-content: space-between;
   &-contain{
     display: flex;
     align-items: center;
   }
 
   &-brand{
-    position: absolute;
+    position: relative;
     font-family: $mainFont;
     font-size: 22px;
     font-weight: 700;
