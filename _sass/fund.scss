@@ -46,18 +46,12 @@
     top: 0px;
     right: 0px;
     height: 100%;
-    width: 710px;
+    width: 50vw;
     background-position: left center;
     background-size: cover;
     background-image: url(/assets/img/hero-image@3x.png);
     background-color: transparent;
-    @media screen and (max-width: 1220px){
-      width: 500px;
-    }
     @media screen and (max-width: 992px){
-      width: 300px;
-    }
-    @media screen and (max-width: 768px){
       display: none;
     }
   }
