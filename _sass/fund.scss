@@ -1,0 +1,148 @@
+.fund-page{
+  padding-top: 170px;
+  @media screen and (max-width: 768px){
+    padding-top: 110px;
+  }
+  .heading{
+    font-family: $mainFont;
+    font-size: 40px;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.3px;
+    color: #1a324e;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  h3{
+    font-family: $mainFont;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.06;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #6b7c93;
+    text-transform: uppercase;
+    margin-bottom: 48px;
+    @media screen and (max-width: 768px){
+      font-size: 14px;
+    }
+  }
+}
+
+.fund-info-box{
+  position: relative;
+  background-color: #f6f9fc;
+  padding-top: 42px;
+  padding-bottom: 24px;
+  overflow: hidden;
+
+  .fund-slant{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 710px;
+    background-position: left center;
+    background-size: cover;
+    background-image: url(/assets/img/hero-image@3x.png);
+    background-color: transparent;
+    @media screen and (max-width: 1220px){
+      width: 500px;
+    }
+    @media screen and (max-width: 992px){
+      width: 300px;
+    }
+    @media screen and (max-width: 768px){
+      display: none;
+    }
+  }
+  p{
+    font-family: $mainFont;
+    font-size: 18px;
+    line-height: 1.61;
+    letter-spacing: 0.2px;
+    color: #6b7c93;
+    font-weight: 300;
+    margin-bottom: 35px;
+    max-width: 95%;
+    @media screen and (max-width: 768px){
+      font-size: 14px;
+    }
+  }
+  .para1{
+    max-width: 540px;
+  }
+
+  .para2{
+    width: 460px;
+  }
+
+  .para3{
+    width: 380px;
+  }
+}
+
+
+.fund-bullet-points{
+  padding-top: 90px;
+  padding-bottom: 112px;
+  @media screen and (max-width:768px){
+    padding-top: 50px;
+  }
+
+  h4{
+    font-family: $mainFont;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.81;
+    letter-spacing: 0.1px;
+    color: #20c4ee;
+    text-transform: uppercase;
+    margin-bottom: 63px;
+
+    @media screen and (max-width:768px){
+      margin-bottom: 50px;
+    }
+  }
+
+}
+
+.bullet-box{
+  margin-bottom: 40px;
+  .bullet-heading{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    img{
+      height: 40px;
+      margin-right: 18px;
+    }
+    h3{
+      font-family: $mainFont;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 1.32;
+      letter-spacing: 0.2px;
+      color: #0c3769;
+    }
+  }
+
+  p{
+    font-family: $mainFont;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.61;
+    letter-spacing: 0.2px;
+    color: #6b7c93;
+    font-weight: 300;
+  }
+}
