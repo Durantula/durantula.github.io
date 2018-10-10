@@ -1,11 +1,18 @@
 .sub-navigation{
   .container{
     border-bottom: solid 1px #d3d7dd;
+    @media screen and (max-width: 768px){
+      border: none;
+    }
   }
   .service-nav{
     padding-top: 141px;
     padding-bottom: 20px;
     display: flex;
+    @media screen and (max-width: 768px){
+      justify-content: center;
+      border-bottom: solid 1px #d3d7dd;
+    }
     p{
       font-family: $mainFont;
       font-size: 18px;
