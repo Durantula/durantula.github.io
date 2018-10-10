@@ -16,6 +16,7 @@
     align-items: center;
   }
 
+
   &-brand{
     position: absolute;
     font-family: $mainFont;
@@ -23,6 +24,11 @@
     font-weight: 700;
     text-align: right;
     color: #6b7c93;
+    margin-left: 46px;
+    @media screen and (max-width: 992px){
+      margin-left: 0px;
+    }
+    
 
     @media screen and (max-width: 768px){
       position: relative
@@ -32,7 +38,8 @@
       margin-right: 0px;
     }
     img{
-      height: 50px;
+      height: 30px;
+      width: auto;
     }
   }
 
@@ -533,3 +540,10 @@
   display: flex;
   align-items: center;
 }
+
+// .navbar-collapse{
+//   @media screen and (max-width: 992px){
+//     justify-content: flex-end;
+//     margin: 0px!important;
+//   }
+// }
