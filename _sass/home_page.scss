@@ -78,8 +78,18 @@
   }
    
   &-text{
+    position: relative;
     z-index: 3;
     margin-bottom: 20px;
+
+    img{
+      position: absolute;
+      height: 236px;
+      width: auto;
+      margin-left: -76px;
+      margin-top: -76px;
+
+    }
     h1{
       color: #1a324e;
       font-family: $mainFont;
