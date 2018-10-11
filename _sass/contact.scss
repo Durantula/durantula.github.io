@@ -4,6 +4,11 @@
   background-image: url('/assets/img/header.jpg');
   background-size: cover;
   background-position: center center;
+  padding-bottom: 40px;
+  @media screen and (max-width: 992px) {
+    padding-top: 120px;
+  }
+
 
   .contact-heading{
     font-family: $mainFont;
@@ -24,6 +29,10 @@
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14);
   border: solid 1px #eff0f2;
   background-color: #ffffff;
+  @media screen and (max-width: 992px) {
+    margin-bottom: 40px;
+  }
+
 
   h4{
     font-family: $mainFont;

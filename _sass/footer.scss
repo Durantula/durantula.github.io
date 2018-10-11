@@ -1,6 +1,10 @@
 .footer{
   background-color: #6b7c93;
   margin: 0px;
+
+  @media screen and (max-width: 768px){
+    padding: 40px 0;
+  }
 }
 .footer-box{
   height: 100px;
@@ -9,6 +13,11 @@
   justify-content: space-between;
   margin: 0px;
 
+  @media screen and (max-width: 768px){
+    flex-direction: column;
+    height: auto
+  }
+
   p{
     font-family: $mainFont;
     font-size: 15px;
@@ -16,11 +25,18 @@
     color: #ffffff;
     margin-bottom: 0px;
     font-weight: 100;
+    @media screen and (max-width: 768px){
+      order:2;
+    }
+    
   }
 
   .socials{
     display: flex;
     align-items: center;
+    @media screen and (max-width: 768px){
+      margin-bottom: 15px;
+    }
 
     .circle{
       cursor: pointer;
