@@ -1071,6 +1071,7 @@
     flex-wrap: wrap;
 
     img{
+      cursor: pointer;
       max-height: 32px;
       width: auto;
       @media screen and (max-width: 992px){
@@ -1120,6 +1121,8 @@
     margin-bottom: 24px;
     border: solid 0.5px #eff0f2;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14);
+    transition: 0.3s;
+
   }
 
   .blog-box{
@@ -1128,6 +1131,13 @@
     @media screen and (max-width: 992px){
       margin: auto;
       margin-bottom: 40px;
+    }
+    &:hover{
+      .blog-image{
+        box-shadow: 2px 2px 13px 0 rgba(32,196,238,0.53);
+        border: solid 1px #20c4ee;
+        transform: scale(1.03)
+      }
     }
   }
   .blog-heading-box{
@@ -1232,10 +1242,24 @@
       }
 
       .join-socials{
-        img{
+        display: flex;
+        
+        .circle{
+          cursor: pointer;
+          background-color: #6b7c93;
+          height: 43px;
           width: 43px;
-          height: auto;
-          margin-right: 19px;
+          transition: 0.3s;
+
+          &:hover{
+            transform: scale(1.03);
+            box-shadow: 0 4px 6px rgba(50,50,93,0.21), 0 1px 3px rgba(0,0,0,0.08);
+          }
+
+          i{
+            color: white;
+            font-size: 18px;
+          }
         }
         @media screen and (max-width: 992px){
           margin-bottom: 20px;
@@ -1291,6 +1315,12 @@
           font-weight: 900;
           color: #ffffff;
           outline: none;
+          transition: 0.3s;
+
+          &:hover{
+            box-shadow: 2px 2px 13px 0 rgba(32,196,238,0.53);
+            transform: scale(1.03);
+          }
 
           @media screen and (max-width: 992px){
             width: 200px;

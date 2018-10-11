@@ -1,5 +1,22 @@
 $(function() {
 
+  
+
+  $( document ).ready(function() {
+
+    $("#heading-fade").animate({
+      opacity: 1,
+    }, 1500 );
+    $("#subheading-fade").animate({
+      opacity: 1,
+    }, 1500 );
+  });
+
+  
+
+
+  //old js
+
   $(".dropdown-exit").on("click", function(e){
     e.preventDefault();
     $("#content").removeClass("blurEverything");
@@ -26,126 +43,7 @@ $(function() {
    
   })
   
-//
-//   $('.base-lead-form').on('submit', function(event) {
-//     var that = this
-//     event.preventDefault();
-//     var data = $("input", this).serializeArray();
-//
-//     $.ajax({
-//       url: $(this).attr('action'),
-//       type: "POST",
-//       data: $(this).serialize(),
-//     }).done(function() {
-//       $(that.id+'.unsubmitted').hide();
-//       $(that.id+'.submitted').show();
-//     }).fail(function(xhr) {
-//       alert(xhr.responseText)
-//     });
-//   });
-//
-//   $('.pricing-plans .number-of-staff-slider').on('input', function(e) {
-//     var costOfEmployee = 60; // 60$ per hour for a fully laden employee (benefits etc)
-//     var workWeeksPerYear = 52; // full time employee is paid for all weeks in the year
-//
-//     var licenses = $(this).val()
-//     $('.number-of-staff .val').text(licenses);
-//     $('.pricing-plans .number-of-staff-slider').val(licenses);
-//     $('.pricing-block .plan-button a').each(function(i, el) {
-//       var url = $(el).uri().setSearch("licenses", licenses);
-//       $(el).attr('href', url.toString());
-//     });
-//
-//     if (licenses == "30") {
-//       $('.pricing-block .inner').addClass('s30');
-//     } else {
-//       $('.pricing-block .inner').removeClass('s30');
-//     }
-//
-//     var calcCostPerLicense = function(licenses, monthlySpend) {
-//       return monthlySpend / licenses;
-//     }
-//
-//     var calcMonthlySpend = function(licenses, basePrice) {
-//       var lt10 = Math.min(10, licenses);
-//       var lt20 = Math.min(10, licenses - lt10);
-//       var gt20 = licenses - lt10 - lt20;
-//
-//       return lt10 * basePrice + lt20 * basePrice * 0.7 + gt20 * basePrice * 0.5;
-//     }
-//
-//     var calcHoursPerMonth = function(costPerLicense) {
-//       var hoursPerMonth = costPerLicense / costOfEmployee;
-//       var weeksPerMonth = workWeeksPerYear / 12;
-//       return hoursPerMonth / weeksPerMonth;
-//     }
-//
-//     $('div[data-plan]').each(function(i, el) {
-//       var planName = $(this).data('plan');
-//       var basePrice = $(this).data('base-price');
-//
-//       var monthlySpend = parseInt(calcMonthlySpend(licenses, basePrice));
-//       var costPerLicense = parseInt(calcCostPerLicense(licenses, monthlySpend));
-//       var hoursPerMonth = calcHoursPerMonth(costPerLicense);
-//
-//       $('.pricing-' + planName + ' .cost-per-license .val').text(costPerLicense);
-//       $('.pricing-' + planName + ' .monthly-spend .val').text(monthlySpend);
-//       $('.pricing-' + planName + ' .hours-per-month .val').text(hoursPerMonth.toFixed(1));
-//     });
-//
-//   });
-//
-//   $('.scroll-down').click(function() {
-//     $('html, body').animate({
-//       scrollTop: $( $.attr(this, 'href') ).offset().top
-//     }, 500);
-//     return false;
-//   });
-//
-//   $('.mobile-menu').click(function() {
-//     $(this).toggleClass("open");
-//     $('.navbar-nav').slideToggle();
-//   });
-//
-//   $(window).on("resize", function () {
-//     if ($(window).width() > 767) {
-//       $(".mobile-menu").removeClass("open");
-//     } else {
-//       if(!$(".mobile-menu").hasClass("open")){
-//         $(".navbar-nav").hide();
-//       }
-//     }
-//   });
-//
-//   $('#lightSlider-field').lightSlider({
-//     item: 4,
-//     auto: true,
-//     slideMove: 2,
-//     loop: true,
-//     pager: true,
-//     controls: false,
-//     responsive: [
-//         { breakpoint:767, settings: { item: 3 } },
-//         { breakpoint:480, settings: { item: 2 } }
-//     ]
-//   });
-//
-//   $('#lightSlider-facilities').lightSlider({
-//     item: 4,
-//     slideMove:2,
-//     loop: false,
-//     pager: true,
-//     controls: false,
-//     responsive : [
-//         { breakpoint:767, settings: { item: 3 } },
-//         { breakpoint:480, settings: { item: 2 } }
-//     ]
-//   });
-//
-//   $('body.section-home .home-network .item ul li img').click(function() {
-//
-//   });
-//
+
   $('.fs-feature-grid div.inner').click(function() {
     $('.fs-feature-detail .container').removeClass('active');
     $(".fs-feature-detail #" + $(this).data('title')).addClass('active');
