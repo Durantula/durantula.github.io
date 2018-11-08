@@ -303,3 +303,22 @@ body{
 #subheading-fade{
   opacity: 0;
 }
+
+.action{
+  cursor: pointer;
+  background-color: #212529;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  border: 0px;
+  color: #fff;
+  font-family: $mainFont;
+  font-size: 20px;
+  width: 300px;
+  padding: 10px 20px;
+  &:hover{
+    // transform: scale(1.01);
+  }
+}

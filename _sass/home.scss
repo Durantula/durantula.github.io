@@ -1,14 +1,96 @@
 .home-sell{
-  height: 100vh;
+  height: 800px;
   width: 100%;
   background-color: #fffbf5;
   padding: 150px 0;
 }
-.home-instant{
-  height: 100vh;
+
+.home-secure{
+  height: 800px;
   width: 100%;
   background-color: white;
-  padding: 150px 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+
+  .secure-header{
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h1{
+      font-family: $mainFont;
+      font-size: 90px;
+      font-weight: 700;
+      color: #2d384c;
+    }
+    h4{
+      margin-bottom: 0px;
+      color: #2d384c;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-family: $mainFont;
+      font-weight: 400;
+      letter-spacing: 0.4px;
+    }
+    p{
+      font-family: $mainFont;
+      font-size: 24px;
+      font-weight: 700;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.46;
+      letter-spacing: normal;
+      color: #2d384c;
+    }
+
+  }
+}
+
+.home-instant{
+  height: 800px;
+  width: 100%;
+  background-color: white;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+
+  .instant-header{
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h1{
+      font-family: $mainFont;
+      font-size: 90px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+    h4{
+      margin-bottom: 0px;
+      color: #ffffff;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-family: $mainFont;
+      font-weight: 400;
+      letter-spacing: 0.4px;
+    }
+    p{
+      font-family: $mainFont;
+      font-size: 24px;
+      font-weight: 700;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.46;
+      letter-spacing: normal;
+      color: #ffffff;
+    }
+
+  }
 }
 
 .home-iphone{
@@ -40,5 +122,133 @@
     font-size: 66px;
     font-weight: 700;
     margin-top: -7px;
+    margin-bottom: 30px;
   }
 }
+
+.fee-container{
+  height: 800px;
+
+  .fee-box{
+    margin: auto;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fee-amount{
+    width: 128px;
+    height: 128px;
+    background-image: linear-gradient(to bottom, #4eff00, #49a000);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  .fee{
+    height: 96px;
+    width: 96px;
+    border-radius: 50%;
+    background-color: #2d384c;
+
+  }
+}
+
+
+.time-box{
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.time-content{
+  width: 300px;
+
+  .time-heading{
+    font-family: $mainFont;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  .time-tracker{
+    font-family: $mainFont;
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 0px;
+  }
+  margin-bottom: 20px;
+}
+
+
+
+.time-loader{
+  box-shadow: 0 2px 4px 0 #a05a05;
+  position: relative;
+  width: 300px;
+  height: 22px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.load-amount{
+  width: 0px;
+  height: 22px;
+  background-color: #8edc10;
+  position: absolute;
+  top:0px;
+}
+
+.money-timer{
+  display: flex;
+  align-items: center;
+
+  #moneyWings{
+    height: 30px;
+    width: auto;
+    margin-left: 20px;
+    display: none;
+  }
+}
+
+
+@keyframes placeHolderShimmer{
+  0%{
+      background-position: -300px 0
+  }
+  100%{
+      background-position: 300px 0
+  }
+}
+
+.load-amount {
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: #8edc10;
+  background: linear-gradient(to right, #8edc10 8%, #98ec11 18%, #8edc10 33%);
+  background-size: 800px 104px;
+
+
+  width: 0px;
+  height: 22px;
+  background-color: #8edc10;
+  position: absolute;
+  top:0px;
+}
+
+
+
