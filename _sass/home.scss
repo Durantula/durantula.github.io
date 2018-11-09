@@ -96,6 +96,10 @@
       color: #ffffff;
     }
 
+    span{
+      font-size: 35px;
+    }
+
   }
 }
 
@@ -141,6 +145,41 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .fee-rate{
+    h1{
+      color: #fff;
+      font-family: $mainFont;
+      font-size: 200px;
+      line-height: 120px;
+    }
+    .competitor-rate{
+      font-size: 140px!important;
+    }
+    span{
+      font-size: 50px;
+    }
+
+    h3{
+      font-family: $mainFont;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    p{
+      font-family: $mainFont;
+      font-size: 20px;
+      font-weight: 700;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #ffffff;
+      text-transform: uppercase;
+      margin-right: 30px;
+    }
   }
 
   .fee-amount{
@@ -397,3 +436,9 @@
 
   }
 }
+
+.contain-curve{
+  width: 100%;
+  position: relative;
+}
+

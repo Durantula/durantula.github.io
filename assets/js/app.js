@@ -46,7 +46,7 @@ $(function() {
 
   function loop(self){
     $("#moneyWings").hide();
-    $("#speedy-track").text("1s");
+    $("#speedy-track").text("Instant");
     self.css({width: 0})
     loaderAnimate(self)
   }
