@@ -259,6 +259,25 @@
 .beemit_link{
   display: flex;
   align-items: baseline;
+  .beemit-link-content{
+    transition: 0.3s;
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+  }
+
+  &:hover{
+    .beemit-link-content{
+      filter: blur(8px);
+    }
+
+    .website-button{
+      margin-top: 0px;
+      opacity: 1;
+      transform: scale(1.05);
+    }
+    
+  }
 
   p{
     margin-bottom: 0px;
@@ -266,6 +285,28 @@
 
   img{
     margin-left: 20px;
+  }
+
+  .website-button{
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+    background-color: #ff2369;
+    margin-top: 20px;
+    margin-left: 60px;
+    border-radius: 4px;
+    transition: .7s cubic-bezier(.19,1,.22,1);
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+
+    p{
+      color: white;
+      font-family: $mainFont;
+      padding: 10px 20px;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-size: 400;
+      letter-spacing: 1px;
+    }
   }
 }
 
